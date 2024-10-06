@@ -19,7 +19,7 @@
 
         </ImageView>
 
-        <EditText
+        <TextView
             android:layout_width="395dp"
             android:layout_height="129dp"
             android:layout_marginLeft="125dp"
@@ -30,9 +30,9 @@
             android:textColorHint="@color/white"
             android:textSize="42sp">
 
-        </EditText>
+        </TextView>
 
-        <EditText
+        <TextView
             android:layout_width="395dp"
             android:layout_height="129dp"
             android:layout_marginLeft="75dp"
@@ -43,37 +43,37 @@
             android:textColorHint="@color/white"
             android:textSize="22dp">
 
-        </EditText>
+        </TextView>
 
         <EditText
             android:id="@+id/email_input"
             android:layout_width="260dp"
             android:layout_height="48dp"
-            android:layout_marginTop="-40dp"
+            android:layout_marginTop="-70dp"
             android:layout_marginBottom="16dp"
             android:background="@color/white"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="8dp" />
 
-        <EditText
+        <TextView
             android:layout_width="395dp"
             android:layout_height="129dp"
             android:layout_marginLeft="75dp"
-            android:layout_marginTop="-40dp"
+            android:layout_marginTop="10dp"
             android:background="@android:color/transparent"
             android:hint="Password"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="22dp">
 
-        </EditText>
+        </TextView>
 
         <EditText
             android:id="@+id/password_field"
             android:layout_width="260dp"
             android:layout_height="48dp"
-            android:layout_marginTop="-40dp"
+            android:layout_marginTop="-80dp"
             android:layout_marginBottom="16dp"
             android:background="@color/white"
             android:hint="Password"
@@ -90,6 +90,16 @@
             android:text="Confirm"
             android:textColor="#DE1010"
             android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:contentDescription="Botão de voltar"
+            android:layout_gravity="start"
+            android:layout_marginTop="-450dp"/>
 
     </LinearLayout>
 

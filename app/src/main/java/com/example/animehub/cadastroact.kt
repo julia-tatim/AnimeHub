@@ -1,20 +1,22 @@
 package com.example.animehub
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
-import com.example.animehub.R
-import com.example.animehub.cadastroact
-
 
 class cadastroact : ComponentActivity() {
-    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_cadastro)}}
+        setContentView(R.layout.activity_cadastro)
+
+        // Associa o ImageButton ao ID do layout
+        val backButton = findViewById<ImageButton>(R.id.back_button)
+
+        // Define o comportamento de voltar para a tela anterior
+        backButton.setOnClickListener {
+            finish() // Encerra a atividade atual e volta para a anterior
+        }
+    }
+}
