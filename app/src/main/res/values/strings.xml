@@ -7,4 +7,7 @@
     <string name="birthdate">Day of Birth</string>
     <string name="password">Password</string>
     <string name="logout"><u>Logout</u></string>
+    <string name="email_mask">email@gmail.com</string>
+    <string name="passwor_mask">***********</string>
+    <string name="date_mask">xx/xx/xxxx</string>
 </resources>
