@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AnimeHub</string>
+    <string name="back">Back</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="username">Username</string>
+    <string name="email">E-mail</string>
+    <string name="birthdate">Day of Birth</string>
+    <string name="password">Password</string>
+    <string name="logout"><u>Logout</u></string>
 </resources>
