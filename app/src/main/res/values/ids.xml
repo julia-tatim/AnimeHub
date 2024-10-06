@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="back" type="id" />
+    <item name="back_icon" type="id" />
+    <item name="edit" type="id" />
+    <item name="txt_username" type="id" />
+    <item name="txt_email" type="id" />
+    <item name="editTextTextEmailAddress" type="id" />
+    <item name="txt_birthdate" type="id" />
+    <item name="editTextDate" type="id" />
+    <item name="text_password" type="id" />
+    <item name="editTextTextPassword" type="id" />
+    <item name="logout" type="id" />
+</resources>
