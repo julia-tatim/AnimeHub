@@ -1,22 +1,28 @@
 package com.example.animehub
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import androidx.databinding.DataBindingUtil
+import com.example.animehub.databinding.ActivityLoginBinding
+import com.example.animehub.databinding.ActivityProfileBinding
 
 class LoginActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
+        val binding = DataBindingUtil.setContentView<ActivityLoginBinding>(this, R.layout.activity_login)
 
-        // Associa o ImageButton ao ID do layout
-        val backButton = findViewById<ImageButton>(R.id.back_button)
+        binding.backButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
-        // Define o comportamento de voltar para a tela anterior
-        backButton.setOnClickListener {
-            finish() // Encerra a atividade atual e volta para a anterior
+        binding.confirmButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
