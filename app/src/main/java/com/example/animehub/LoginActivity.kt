@@ -7,9 +7,11 @@ import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import androidx.databinding.DataBindingUtil
 import com.example.animehub.databinding.ActivityLoginBinding
+import com.example.animehub.databinding.ActivityMainBinding
 import com.example.animehub.databinding.ActivityProfileBinding
 
 class LoginActivity : ComponentActivity() {
+    lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,7 +23,7 @@ class LoginActivity : ComponentActivity() {
         }
 
         binding.confirmButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
     }

@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        binding.textButton.setOnClickListener {
+        binding.signUpButton.setOnClickListener {
             val intent = Intent(this, cadastroact::class.java)
             startActivity(intent)
         }
