@@ -10,4 +10,14 @@
     <string name="email_mask">email@gmail.com</string>
     <string name="passwor_mask">***********</string>
     <string name="date_mask">xx/xx/xxxx</string>
+    <string name="my_list">My List</string>
+    <string name="anime">Anime</string>
+    <string name="manga">Manga</string>
+    <string name="manhua">Manhua</string>
+    <string name="manhwa">Manhwa</string>
+    <string name="reviews">Reviews</string>
+    <string name="most_viwed_in_2024">Most Viwed in 2024</string>
+    <string name="top_animes">Top Animes</string>
+    <string name="top_readings">Top Readings</string>
+    <string name="news">News</string>
 </resources>
