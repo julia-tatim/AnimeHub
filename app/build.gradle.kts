@@ -1,3 +1,5 @@
+val implementation: Unit
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -51,6 +53,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    implementation ('com.github.bumptech.glide:glide:4.11.0')
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

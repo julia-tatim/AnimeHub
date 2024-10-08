@@ -23,7 +23,7 @@ class cadastroact : ComponentActivity() {
         }
 
         binding.confirmButton.setOnClickListener {
-            val intent = Intent(this, Home::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }
