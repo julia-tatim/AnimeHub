@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,7 +39,7 @@
                 android:src="@drawable/baseline_bookmark_24"
                 app:layout_constraintBottom_toTopOf="@+id/listaTxt"
                 app:layout_constraintEnd_toStartOf="@+id/perfilIcon"
-                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintHorizontal_bias="0.947"
                 app:layout_constraintStart_toStartOf="@+id/logo"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
@@ -73,7 +73,7 @@
                 app:layout_constraintHorizontal_bias="0.969"
                 app:layout_constraintStart_toEndOf="@+id/logo"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="37dp" />
+                tools:layout_editor_absoluteY="34dp" />
 
             <TextView
                 android:id="@+id/listaTxt"
@@ -85,10 +85,10 @@
                 android:textSize="10sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/usernameTxt"
-                app:layout_constraintHorizontal_bias="0.7"
+                app:layout_constraintHorizontal_bias="0.56"
                 app:layout_constraintStart_toStartOf="@+id/logo"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="37dp" />
+                tools:layout_editor_absoluteY="34dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
@@ -108,6 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:gravity="center"
             android:layout_marginTop="10dp">
 
             <com.google.android.material.button.MaterialButton
@@ -187,14 +188,30 @@
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
-                    android:layout_height=" ">
+                    android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="5dp"
-                        android:paddingStart="5dp"
-                        android:src="@drawable/baseline_bookmark_24" />
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/card_bg"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_bookmark_24" />
+
+                        <TextView
+                            android:id="@+id/top2024Title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anime"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
 
@@ -209,23 +226,39 @@
                 android:textSize="12sp" />
 
                 <LinearLayout
-                    android:layout_width="330dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/list_bg"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="2dp">
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <ImageView
-                            android:layout_width="match_parent"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:paddingVertical="5dp"
-                            android:paddingStart="5dp"
-                            android:src="@drawable/baseline_bookmark_24" />
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/card_bg"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/baseline_bookmark_24" />
+
+                            <TextView
+                                android:id="@+id/topAnimeTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/anime"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
                     </HorizontalScrollView>
                 </LinearLayout>
             <TextView
@@ -239,23 +272,39 @@
                 android:textSize="12sp" />
 
             <LinearLayout
-                android:layout_width="330dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/list_bg"
                 android:orientation="horizontal"
-                android:layout_marginLeft="20dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="2dp">
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="5dp"
-                        android:paddingStart="5dp"
-                        android:src="@drawable/baseline_bookmark_24" />
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/card_bg"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_bookmark_24" />
+
+                        <TextView
+                            android:id="@+id/topLeituraTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anime"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
 
@@ -270,23 +319,39 @@
                 android:textSize="12sp"/>
 
             <LinearLayout
-                android:layout_width="330dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/list_bg"
                 android:orientation="horizontal"
-                android:layout_marginLeft="20dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="2dp">
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="5dp"
-                        android:paddingStart="5dp"
-                        android:src="@drawable/baseline_bookmark_24" />
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/card_bg"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_bookmark_24" />
+
+                        <TextView
+                            android:id="@+id/newsTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anime"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
         </LinearLayout>
