@@ -113,73 +113,10 @@
             android:textColor="@color/white"
             android:textSize="16sp" />
 
-        <RelativeLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="10dp"
-            android:paddingRight="20dp">
-            <ImageView
-                android:id="@+id/animeImg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icon"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"/>
-
-            <TextView
-                android:id="@+id/animeName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_centerVertical="true"
-                android:text="@string/anime"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_remove_circle_outline_24"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
-        </RelativeLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@drawable/divisor"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="10dp"/>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="10dp"
-            android:paddingRight="20dp">
-            <ImageView
-                android:id="@+id/animeImg1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icon"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"/>
-
-            <TextView
-                android:id="@+id/animeName1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_centerVertical="true"
-                android:text="@string/anime"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_remove_circle_outline_24"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
-        </RelativeLayout>
+            android:padding="20dp"/>
     </LinearLayout>
 </layout>
