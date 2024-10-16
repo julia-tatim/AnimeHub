@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -43,17 +44,33 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Firebase BOM para gerenciar as versões das bibliotecas do Firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+
+    // Dependências do Firebase
+    implementation("com.google.firebase:firebase-auth")
+
+    // Adicionar RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+
+    // Retrofit e Gson para API
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
 
+    // Biblioteca para carregar imagens
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.firestore.ktx)
+
+    // Dependências de teste
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
 }
+

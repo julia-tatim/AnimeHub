@@ -99,7 +99,6 @@
                 android:layout_marginBottom="16dp"
                 android:background="@color/white"
                 android:hint="Birth "
-                android:inputType="date"
                 android:padding="8dp" />
             <TextView
                 android:layout_width="395dp"
