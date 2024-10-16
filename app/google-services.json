@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1075013530515",
+    "project_id": "animehub-bd571",
+    "storage_bucket": "animehub-bd571.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075013530515:android:7bc9ebae5f0418e9b32e66",
+        "android_client_info": {
+          "package_name": "com.example.animehub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3p-6m_QZhCZwf-ZxlWZBjoSZFep689js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
